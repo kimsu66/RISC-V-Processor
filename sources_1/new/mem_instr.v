@@ -7,7 +7,7 @@ module mem_instr
 	reg			[31:0]	mem	[255:0];	//32bit * 256 reg array
 
 	initial begin
-    $readmemh("/home/lenovo/KSY_workspace/fpga/RISCV/RISCV.srcs/sim_1/new/periph_memfile.mem", mem);
+    $readmemh("/home/lenovo/KSY_workspace/fpga/RISCV/RISCV.srcs/sim_1/new/reaction_time_game.mem", mem);
     end
 
 	assign	instr	=	mem[addr[9:2]];
